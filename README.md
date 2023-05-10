@@ -8,48 +8,67 @@ Requires PHP 7.4 or newer.
 # Usage
 Here's a basic usage example:
 
-`` Set Your Website Url Via "Config/site.php``
+### Environment Setup: 
 
-Defining Routes:
+```
+Set Your Website Url Via "Config/site.php
+```
 
-`` Navigate to "config/routes.php" to start defining your routes ``
-
-Basic Usage:
+### Defining Routes:  
 
 ``` 
-/**
- * Routing System By FosterPHP
- * 
- * @param string $destination
- * 
- * @param ?string|callable $callback
- */
+Navigate to "config/routes.php" to start defining your routes 
+```
 
-// For Request With Static Pages
+### Basic Usage:
+
+For Request With Static Pages:   
+
+```
 $route->get('/', 'index');
+```
+> Static Pages Can Be Created Via The "views" directory.  
 
-// For Get Requests With Callback
+<br>
+
+### Get Requests With Callback: 
+
+```
 $route->get('/callback', function(){
     echo "Callback Test";
 });
+```
 
-//POST Requests
+### POST Requests: 
+```
 $route->post('/demo', function(){
     echo "POST Request Test";
 });
+```
 
-// PUT Request
+
+### PUT Request:
+
+```
 $route->put('/demo', function(){
     echo "PUT Request Test";
 });
+```
 
-// Delete Request
+
+### Delete Request:
+```
 $route->delete('/demo', function(){
     echo "DELETE Request Test";
 });
+```
 
-// For [GET, POST, PUT, DELETE] Requests
+### [GET, POST, PUT, DELETE] Requests:
+```
 $route->any("/404", "404");
 
-``
+```
+
+
+
 
