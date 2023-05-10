@@ -38,7 +38,7 @@ require $route->routepath("routes");
 <br>
 
 
-Directory Structure:
+#### Directory Structure:
 
 ```
 ├── config                  # Configuration files (routes.php, site.php)
@@ -53,7 +53,7 @@ Directory Structure:
 ```
 
 
-Request With Static Pages:   
+#### Request With Static Pages:   
 
 ```php
 $route->get('/', 'index');
