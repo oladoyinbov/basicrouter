@@ -29,8 +29,9 @@ Create Router Instance In "public/index.php" directory:
 declare(strict_types=1);
 ERROR_REPORTING(E_ALL);
 
-require_once realpath("../vendor/autoload.php");
 use FosterRouter\Router\Router;
+
+require_once realpath("../vendor/autoload.php");
 
 $route = new Router();
 require $route->routepath("routes");
