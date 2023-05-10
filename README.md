@@ -10,13 +10,13 @@ Here's a basic usage example:
 
 ### Environment Setup: 
 
-```
+```php
 Set Your Website Url Via "Config/site.php
 ```
 
 ### Defining Routes:  
 
-``` 
+```php
 Navigate to "config/routes.php" to start defining your routes 
 ```
 
