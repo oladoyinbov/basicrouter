@@ -11,7 +11,7 @@ Here's a basic usage example:
 ### Environment Setup: 
 
 ```php
-Set Your Website Url Via "Config/site.php
+Set Your Website Url Via "Config/site.php"
 ```
 
 ### Defining Routes:  
@@ -37,12 +37,29 @@ require $route->routepath("routes");
 ```
 <br>
 
+
+Directory Structure:
+
+```
+├── config                  # Configuration files (routes.php, site.php)
+├── public                  # Web server files (index.php)
+├── src                     # PHP source code (The App namespace)
+│   ├── Helper              # Helper files
+│   ├── Router              # Router classes
+├── views                   # Static view files
+│   ├── index.php           # Index Page
+│   ├── 404.php             # 404 Page
+
+```
+
+
 Request With Static Pages:   
 
 ```php
 $route->get('/', 'index');
 ```
 > Static Pages Can Be Created Via The "views" directory.  
+> `index` will be automatically converted to "views/index.php"
 
 <br>
 
