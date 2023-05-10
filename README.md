@@ -16,7 +16,7 @@ Defining Routes:
 
 Basic Usage:
 
-`` 
+``` 
 /**
  * Routing System By FosterPHP
  * 
