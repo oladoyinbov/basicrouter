@@ -22,7 +22,22 @@ Navigate to "config/routes.php" to start defining your routes
 
 ### Basic Usage:
 
-For Request With Static Pages:   
+Create Router Instance In "public/index.php" directory:
+
+```
+<?php
+declare(strict_types=1);
+ERROR_REPORTING(E_ALL);
+
+require_once realpath("../vendor/autoload.php");
+use FosterRouter\Router\Router;
+
+$route = new Router();
+require $route->routepath("routes");
+```
+<br>
+
+Request With Static Pages:   
 
 ```
 $route->get('/', 'index');
