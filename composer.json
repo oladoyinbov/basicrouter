@@ -1,6 +1,7 @@
 {
     "name": "oladoyinbov/php-static-router",
     "description": "Fast static request router for PHP",
+    "license": "MIT",
     "keywords": [
         "routing",
         "router",

@@ -3,7 +3,7 @@
         'name' => 'oladoyinbov/php-static-router',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '611f55e5a7993599e42e9790eaddf9a4e4d16a15',
+        'reference' => '416070156d8c8986c310f032838f8910f31b80d8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'oladoyinbov/php-static-router' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '611f55e5a7993599e42e9790eaddf9a4e4d16a15',
+            'reference' => '416070156d8c8986c310f032838f8910f31b80d8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
