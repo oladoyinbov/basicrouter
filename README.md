@@ -31,7 +31,7 @@ $route->get('/', 'index');
 
 <br>
 
-### Get Requests With Callback: 
+### ``GET`` Requests With Callback: 
 
 ```
 $route->get('/callback', function(){
@@ -39,7 +39,7 @@ $route->get('/callback', function(){
 });
 ```
 
-### POST Requests: 
+### ``POST`` Requests: 
 ```
 $route->post('/demo', function(){
     echo "POST Request Test";
@@ -47,7 +47,7 @@ $route->post('/demo', function(){
 ```
 
 
-### PUT Request:
+### ``PUT`` Request:
 
 ```
 $route->put('/demo', function(){
@@ -56,14 +56,14 @@ $route->put('/demo', function(){
 ```
 
 
-### Delete Request:
+### ``Delete`` Request:
 ```
 $route->delete('/demo', function(){
     echo "DELETE Request Test";
 });
 ```
 
-### [GET, POST, PUT, DELETE] Requests:
+### ``[GET, POST, PUT, DELETE]`` Requests:
 ```
 $route->any("/404", "404");
 
