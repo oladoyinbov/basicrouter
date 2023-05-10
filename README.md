@@ -24,7 +24,7 @@ Navigate to "config/routes.php" to start defining your routes
 
 Create Router Instance In "public/index.php" directory:
 
-```
+```php
 <?php
 declare(strict_types=1);
 ERROR_REPORTING(E_ALL);
@@ -39,7 +39,7 @@ require $route->routepath("routes");
 
 Request With Static Pages:   
 
-```
+```php
 $route->get('/', 'index');
 ```
 > Static Pages Can Be Created Via The "views" directory.  
@@ -48,14 +48,14 @@ $route->get('/', 'index');
 
 ### ``GET`` Requests With Callback: 
 
-```
+```php
 $route->get('/callback', function(){
     echo "Callback Test";
 });
 ```
 
 ### ``POST`` Requests: 
-```
+```php
 $route->post('/demo', function(){
     echo "POST Request Test";
 });
@@ -64,7 +64,7 @@ $route->post('/demo', function(){
 
 ### ``PUT`` Request:
 
-```
+```php
 $route->put('/demo', function(){
     echo "PUT Request Test";
 });
@@ -72,14 +72,14 @@ $route->put('/demo', function(){
 
 
 ### ``Delete`` Request:
-```
+```php
 $route->delete('/demo', function(){
     echo "DELETE Request Test";
 });
 ```
 
 ### ``[GET, POST, PUT, DELETE]`` Requests:
-```
+```php
 $route->any("/404", "404");
 
 ```
