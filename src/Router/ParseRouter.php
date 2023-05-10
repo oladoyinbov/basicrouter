@@ -65,27 +65,9 @@ class ParseRouter{
       $this->app_url = filter_var($SITE["APP_URL"], FILTER_SANITIZE_URL);
  
 
-      // Get Url And Get Basename
-      $this->url_path = parse_url($this->full_request_url, PHP_URL_PATH);
-   
-      $this->basename = explode('/', $this->request_url);
-      array_shift($this->basename);
-      array_shift($this->basename);
-      $this->basename = '/'.implode('/', $this->basename);
-   
-
-  
-    // Display If It's Index
-    if($this->route === '/' && $this->app_url === $this->full_request_url && isset($this->callback)){
-      // Callback function
-      if( is_callable($this->callback) ){
-        call_user_func_array($this->callback, []);
-        exit();
-      }
-
-      self::viewspath($this->callback);
-      exit();
-    }  
+       // Get and Parse Url
+       $this->basename = trim(rtrim($this->check_http.$_SERVER['HTTP_HOST'].$this->request_url, '/'));
+       $this->route = trim(rtrim($SITE["APP_URL"].$this->route, '/'));
 
 
       // Check One For Default Static Router
