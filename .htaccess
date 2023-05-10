@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI}  !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.css|\.svg|\.js|\.pdf)$
+RewriteRule (.*) public/index.php [QSA,L]
+
+<Files .env>
+    order allow,deny
+    Deny from all
+</Files>
