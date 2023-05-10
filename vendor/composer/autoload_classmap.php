@@ -7,8 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
-    'FosterRouter\\Helper\\CheckRequestMethod' => $baseDir . '/src/Helper/CheckRequestMethod.php',
-    'FosterRouter\\Helper\\Views' => $baseDir . '/src/Helper/Views.php',
-    'FosterRouter\\Router\\ParseRouter' => $baseDir . '/src/Router/ParseRouter.php',
-    'FosterRouter\\Router\\Router' => $baseDir . '/src/Router/Router.php',
 );

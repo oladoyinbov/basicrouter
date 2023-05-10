@@ -22,10 +22,6 @@ class ComposerStaticInita6b935c39e5f5c51a111b0836cb09699
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'FosterRouter\\Helper\\CheckRequestMethod' => __DIR__ . '/../..' . '/src/Helper/CheckRequestMethod.php',
-        'FosterRouter\\Helper\\Views' => __DIR__ . '/../..' . '/src/Helper/Views.php',
-        'FosterRouter\\Router\\ParseRouter' => __DIR__ . '/../..' . '/src/Router/ParseRouter.php',
-        'FosterRouter\\Router\\Router' => __DIR__ . '/../..' . '/src/Router/Router.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

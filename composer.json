@@ -1,4 +1,23 @@
 {
+    "name": "oladoyinbov/php-static-router",
+    "description": "Fast static request router for PHP",
+    "keywords": [
+        "routing",
+        "router",
+        "phprouter"
+    ],
+
+    "authors": [
+        {
+            "name": "Oladoyinbo Vincent",
+            "email": "oladoyinbov@gmail.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=7.4.0"
+    },
+    
     "autoload": {
         "psr-4": {
             "FosterRouter\\": "src/"
